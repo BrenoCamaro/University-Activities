@@ -1,18 +1,18 @@
-/*Aluno: Breno Camarô Arraes - uc22200177 */
-/* Desenvolva um algoritmo em C que leia dois números inteiros e possua
-macros que realize as seguintes operações: Somar, Subtrair, Multiplicar e Dividir */
+/*Aluno: Breno CamarÃ´ Arraes - uc22200177 */
+/* Desenvolva um algoritmo em C que leia dois nÃºmeros inteiros e possua
+macros que realize as seguintes operaÃ§Ãµes: Somar, Subtrair, Multiplicar e Dividir */
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h> /* Permite caracteres acentuados */
 
-/* Definição das Macros */
+/* DefiniÃ§Ã£o das Macros */
 #define SOMAR(x, y) x + y
 #define SUBTRAIR(x, y) x - y
 #define MULTIPLICAR(x, y) x * y
 #define DIVIDIR(x, y) x / y
 int main()
 {
-	setlocale(LC_ALL, "Portuguese");
+	setlocale(LC_ALL, "Portuguese"); /* FunÃ§Ã£o da biblioteca locale.h */
 	
 	int valor1, valor2;
 	int resultado;
@@ -26,8 +26,8 @@ int main()
 	fflush(stdin);
 	
 	printf("\nSoma dos valores: %d\n", SOMAR(valor1, valor2));
-	printf("\nSubtração dos valores: %d\n", SUBTRAIR(valor1, valor2));
-	printf("\nMultiplicação dos valores: %d\n", MULTIPLICAR(valor1, valor2));
-	printf("\nDivisão dos valores: %d\n", DIVIDIR(valor1, valor2));
+	printf("\nSubtraÃ§Ã£o dos valores: %d\n", SUBTRAIR(valor1, valor2));
+	printf("\nMultiplicaÃ§Ã£o dos valores: %d\n", MULTIPLICAR(valor1, valor2));
+	printf("\nDivisÃ£o dos valores: %d\n", DIVIDIR(valor1, valor2));
 	return 0;
 }
